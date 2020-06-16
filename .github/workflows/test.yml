@@ -8,9 +8,7 @@ on:
   push:
     branches:
       - '**'
-    tags-ignore:
-      - '**'
-    
+        
 env:
     APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
     APPLITOOLS_BATCH_ID: ${{ github.sha }}
