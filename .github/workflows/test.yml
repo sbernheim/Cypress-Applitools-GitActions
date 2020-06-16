@@ -27,7 +27,6 @@ jobs:
         with:
           node-version: '14.x'
       - run: npm ci
-      - name: Set Applitools Batch ID from Git SHA
-        run: echo ::set-env name=APPLITOOLS_BATCH_ID::$(echo $GITHUB_SHA)
-      - run: npm run cypress:ci
+      - name: Run Tests
+        run: npm run cypress:ci
         
