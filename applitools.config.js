@@ -1,5 +1,5 @@
 module.exports = {
-    concurrency: 1,
+    concurrency: 10,
     apiKey: 'APPLITOOLS_API_KEY',
     //
     browser: [
@@ -14,5 +14,7 @@ module.exports = {
         {deviceName: 'Pixel 2', screenOrientation: 'portrait'}
     ],
     // set batch name to the configuration
-    batchName: 'Ultrafast Batch'
+    batchName: 'Cypress-GitAcions',
+    batchId: process.env.APPLITOOLS_BATCH_ID
+    
 }
