@@ -1,6 +1,6 @@
 module.exports = {
     concurrency: 10,
-    apiKey: 'APPLITOOLS_API_KEY',
+    apiKey: process.env.APPLITOOLS_API_KEY,
     //
     browser: [
         // Add browsers with different viewports
